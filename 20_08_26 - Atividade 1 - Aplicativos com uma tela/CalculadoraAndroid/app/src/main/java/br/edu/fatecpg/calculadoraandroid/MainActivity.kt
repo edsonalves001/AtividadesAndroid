@@ -31,32 +31,35 @@ class MainActivity : AppCompatActivity() {
             val valor2 = edt2.text.toString().toDouble()
             val op = spn.selectedItem.toString()
 
-            if(op.equals("soma")){
+            if(op.equals("Soma")){
                 val soma =  valor1 + valor2
                 txvResult.setText("Resultado da soma: $soma")
                 edt1.text.clear()
                 edt2.text.clear()
-            }else if(op.equals("subtracao")){
+            }else if(op.equals("Subtração")){
+                txvResult.clearComposingText()
                 val subtracao =  valor1 - valor2
-                txvResult.setText("Resultado da subtracao: $subtracao")
+                txvResult.setText("Resultado da subtração: $subtracao")
                 edt1.text.clear()
                 edt2.text.clear()
-            }else if(op.equals("multiplicacao")){
+            }else if(op.equals("Multiplicação")){
                 val multiplicacao =  valor1 * valor2
-                txvResult.setText("Resultado da multiplicacao: $multiplicacao")
+                txvResult.setText("Resultado da multiplicacão: $multiplicacao")
                 edt1.text.clear()
                 edt2.text.clear()
-            }else if(op.equals("divisao")){
+            }else if(op.equals("Divisão")){
                 val divisao =  valor1 / valor2
-                txvResult.setText("Resultado da divisao: $divisao")
+                txvResult.setText("Resultado da divisão: $divisao")
                 edt1.text.clear()
                 edt2.text.clear()
-            }else if(op.equals("todas as operações")){
+            }else if(op.equals("Todas as operações")){
                 val soma =  valor1 + valor2
                 val subtracao =  valor1 - valor2
                 val multiplicacao =  valor1 * valor2
                 val divisao =  valor1 / valor2
-                txvResult.setText("Resultado da soma: $soma" + "/n Resultado da subtração: $subtracao" + "/n Resultado da multiplicacao: $multiplicacao" + "/n Resultado da divisao: $divisao" )
+                txvResult.setText("Resultado da soma: $soma" + "\nResultado da subtração: $subtracao" + "\nResultado da multiplicacao: $multiplicacao" + "\nResultado da divisao: $divisao" )
+                edt1.text.clear()
+                edt2.text.clear()
             }
 
         }

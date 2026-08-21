@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CalculadoraAndroid</string>
+    <string name="app_name">ConversaodeTemperatura</string>
     <string-array name="array_spn_conversoes_temperatura">
         <item>De Celsius (C) para Fahrenheit (F)</item>
         <item>De Celsius (C) para Kelvin (K)</item>
